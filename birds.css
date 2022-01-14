@@ -1,0 +1,48 @@
+/************** Globale Variablen */
+body,h1,h2,h3,h4,p { margin: 0;font-family: Arial, Helvetica, sans-serif;}
+.relative {position: relative;}
+.absolute {position: absolute;}
+
+
+.bird {
+    height: 14vw;
+    width: 10vw;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    background-position: 0 0;
+    animation-name: flattern;
+    animation-duration: 1s;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+
+}
+
+.schwarm {
+    position: absolute;
+    animation-name: vogelflug;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 0;
+    top:0;
+}
+
+
+
+
+@keyframes vogelflug {
+	100% {
+		left: 100%;
+        top: 5%;
+	}
+}
+
+
+
+
+
+@keyframes flattern {
+	100% {
+		background-position: -100vw 0;
+	}
+}

@@ -24,6 +24,8 @@ h1 {
     font-size: 3vw;
 }
 
+/****** Slide Animation ++++*/
+
 .slide {
     left:0;
     transition-property: all;
@@ -33,14 +35,16 @@ h1 {
     overflow: hidden;
 }
 
-/****** Slide Animation ++++*/
 .mother div>article:hover .slide  {
     left: 100%;
     transition-property: all;
     transition-duration: 1s;
+    
 } 
-
-
-
 /***** in mother alle Div und darin die ERSTEN articles sind gemeint, das macht das Ding > */
 
+.bkgrimg1 {
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
