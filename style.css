@@ -1,0 +1,46 @@
+/************** Globale Variablen */
+body,h1,h2,h3,h4,p { margin: 0;font-family: Arial, Helvetica, sans-serif;}
+.relative {position: relative;}
+.absolute {position: absolute;}
+
+
+/******* Globals Layout Grid */
+.w50 {width: 50vw;}
+.w100 {width: 100vw;}
+.h50 {height: 50vh;}
+
+.bkgrcolor1 {background-color: red;}
+.bkgrcolor2 {background-color: #204bb2;}
+.bkgrcolor3 {background-color: greenyellow;}
+.bkgrcolor4 {background-color: darkorange;}
+
+
+.flex_c {display: flex;}
+
+
+/************** Layout basics */
+
+h1 {
+    font-size: 3vw;
+}
+
+.slide {
+    left:0;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.mother div>article {
+    overflow: hidden;
+}
+
+/****** Slide Animation ++++*/
+.mother div>article:hover .slide  {
+    left: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+} 
+
+
+
+/***** in mother alle Div und darin die ERSTEN articles sind gemeint, das macht das Ding > */
+
