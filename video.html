@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+  #myVideo1 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  #myVideo2 {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-2;
+}
+
+body {margin: 0;}
+
+h1 {
+  font-size: 25vh;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+}
+.fliegengitter {
+  position: absolute;
+  background-image: url(images/grid1.gif);
+    width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="fliegengitter">adfsadfad</div>
+
+    <h1>Aniko Kovacs<br>
+    Portfoliosssss
+    </h1>  
+    <a href="https://www.google.de">Link</a>
+
+    <video autoplay muted loop id="myVideo2">
+        <source src="videos/test.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+</html>
+
+

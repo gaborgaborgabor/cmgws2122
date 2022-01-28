@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {box-sizing: border-box;}
+    body {margin: 20vw;}
+    .beispiel1 {
+        width: 50vw;
+            font-size: 5vh;
+            margin: 0;
+        padding:1vw;
+        border-radius: 1vw;
+        transform: translate3d(0,0,0) perspective(500px) rotateY(15deg) rotateX(50deg);
+        #box-shadow: 0 20px 20px 0 #9C9C9C;
+        transition-property: all;
+        transition-duration: 1s;
+        animation-name: spinn1;
+        animation-duration: 100s;
+        /* animation-timing-function: steps(10); */
+         animation-iteration-count: infinite;
+         pointer-events: none;
+        
+    }
+
+    @keyframes spinn1 {
+	0%     {
+        transform: translate3d(0,0,0) perspective(200px) rotateY(15deg) rotateX(0deg);
+        }
+  
+    100% {
+        transform: translate3d(0,0,0) perspective(200px) rotateY(375deg) rotateX(70deg);
+	}
+}
+
+
+</style>
+
+</head>
+<body>
+    
+<h1 class="beispiel1">You'll need a recent version of Firefox, Chrome, Safari, Opera or IE to use this Gradient Generator. The resulting CSS gradients are cross-browser - they will work in these browsers and will also fall back to a simpler gradient in older versions of Internet Explorer. </h1>
+
+<audio controls preload autoplay loop>
+    <source src="videos/sound.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+body {margin: 10vw;}
+
+.beispiel1 {
+    width: 30vw;
+    height: 30vw;
+    
+    transform: perspective(1000px) rotateY(18deg) rotateX(45deg);
+    transform-style: preserve-3d;
+ 
+  box-shadow: rgba(22, 31, 39, 0.42) 0px 50px 50px -25px;
+  border-radius: 10px;
+  background-color:grey;
+  border: 1px solid;
+  border-color: rgb(184, 194, 204);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.beispiel1:hover {
+    transform: translate3d(0px, -50px, 0px) perspective(1000px) rotateY(-18deg) rotateX(0deg) rotateZ(-15deg);
+    box-shadow: rgba(22, 31, 39, 0.42) 50px 120px 50px -25px;
+
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+</style>
+
+</head>
+<body>
+    
+<div class='beispiel1'></div>
+
+
+</body>
+</html>
+
+-->
