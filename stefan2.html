@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <style>
+
+        * {box-sizing: border-box;margin: 0;}
+        .flex {
+            display: flex;
+            flex-flow: wrap;  
+            overflow:hidden; 
+            width:100vw;
+            height: 100vh;
+        }
+
+        .box {
+            width:10vw;
+            height:10vh;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+  
+        .video {
+            background-color: darkorange;
+            transition-property: all;
+            transition-duration: 0.1s;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="flex">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+       
+    </div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function() { // wenn Dokument vollständig geladen...dann diese Funktion
+  
+        //console.log('Hallo Stefan'); // das ist eine Meldung in der inspector console
+        $(".box").mouseover(function() {
+                    //console.log('drüber alter');
+                    $(this).toggleClass('video');
+                    
+        }); 
+});
+
+
+</script>
+
+
+</body>
+</html>
